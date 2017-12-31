@@ -3,7 +3,7 @@ import NotificationCenter
 import Core
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+
     @IBOutlet weak var valueLabel: UILabel!
 
     let repository = ValueRepository()
@@ -14,7 +14,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 
     func updateUI() {
-        valueLabel.text = "\(repository.load())"
+        repository.load { value in
+            DispatchQueue.main.async {
+                self.valueLabel.text = "\(value)"
+            }
+        }
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {

@@ -2,17 +2,6 @@ import CloudKit
 
 public class ValueRepository: Repository {
 
-    let defaults = UserDefaults.standard
-
-    var value: Int {
-        get {
-            return defaults.integer(forKey: "Value")
-        }
-        set {
-            defaults.set(newValue, forKey: "Value")
-        }
-    }
-
     var container: CKContainer {
         return CKContainer(identifier: "iCloud.com.elit.flow")
     }
@@ -29,20 +18,28 @@ public class ValueRepository: Repository {
     }
 
     public func write(_ value: Int) {
-        let record = CKRecord(recordType: "Value", recordID: recordID)
-        record["value"] = value as NSNumber
-        database.save(record) {
-            (record, error) in
-            if let error = error {
-                // Insert error handling
-                return
+        database.fetch(withRecordID: recordID) { (existingRecord, error) in
+            let record: CKRecord
+            if let _ = existingRecord?["value"] as? Int {
+                record = existingRecord!
+            } else {
+                record = CKRecord(recordType: "Value", recordID: self.recordID)
             }
-            // Insert successfully saved record code
+
+            record["value"] = value as NSNumber
+
+            self.database.save(record) {
+                (record, error) in
+                if let error = error {
+                    // Insert error handling
+                    return
+                }
+                // Insert successfully saved record code
+            }
         }
-        self.value = value
     }
 
-    public func load() -> Int {
+    public func load(handler: @escaping (Int)->Void) {
         database.fetch(withRecordID: recordID) { (record, error) in
             if let error = error {
                 // Error handling for failed fetch from public database
@@ -50,9 +47,8 @@ public class ValueRepository: Repository {
             }
             // Display the fetched record
             if let value = record?["value"] as? Int {
-                self.value = value
+                handler(value)
             }
         }
-        return value
     }
 }
