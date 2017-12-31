@@ -1,24 +1,20 @@
-//
-//  TodayViewController.swift
-//  today
-//
-//  Created by Tiago Martinho on 31/12/17.
-//  Copyright © 2017 tm. All rights reserved.
-//
-
 import UIKit
 import NotificationCenter
+import Core
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
+    @IBOutlet weak var valueLabel: UILabel!
+
+    let repository = ValueRepository()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        updateUI()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    func updateUI() {
+        valueLabel.text = "\(repository.load())"
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
