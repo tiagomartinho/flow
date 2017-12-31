@@ -1,4 +1,5 @@
 import UIKit
+import Core
 
 class ViewController: UIViewController {
     
@@ -19,24 +20,5 @@ class ViewController: UIViewController {
 
     func updateUI() {
         valueLabel.text = "\(repository.load())"
-    }
-}
-
-protocol Repository {
-    associatedtype T
-    func load() -> T
-    func write(_ value: T)
-}
-
-class ValueRepository: Repository {
-
-    var value = 42
-
-    func write(_ value: Int) {
-        self.value = value
-    }
-
-    func load() -> Int {
-        return value
     }
 }
