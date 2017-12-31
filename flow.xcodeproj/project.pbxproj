@@ -25,6 +25,7 @@
 		24C2EB721FF93A1100C9503D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C2EB5C1FF93A1100C9503D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24C2EB7B1FF93A2200C9503D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7A1FF93A2200C9503D /* Repository.swift */; };
 		24C2EB7D1FF93A4B00C9503D /* ValueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7C1FF93A4B00C9503D /* ValueRepository.swift */; };
+		24C2EB7E1FF93E0400C9503D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C2EB5C1FF93A1100C9503D /* Core.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C2EB7E1FF93E0400C9503D /* Core.framework in Frameworks */,
 				24C2EB231FF9394300C9503D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -860,6 +862,7 @@
 		24C2EB731FF93A1100C9503D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -886,6 +889,7 @@
 		24C2EB741FF93A1100C9503D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
