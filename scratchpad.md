@@ -1,0 +1,15 @@
+- Mac App
+- Mac Today Extension
+- tvOS App
+- tvOS Top Shelf
+- Watch App
+- Watch Extension
+- Notification Badge
+- Subscribing to Record Changes
+https://developer.apple.com/library/content/documentation/DataManagement/Conceptual/CloudKitQuickStart/SubscribingtoRecordChanges/SubscribingtoRecordChanges.html
+- Add loading to value
+- Add error handling to write/read from iCloud
+- Add local cache to Repository
+- Linter
+- CI
+- TestFlight
