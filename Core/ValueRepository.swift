@@ -2,7 +2,16 @@ import CloudKit
 
 public class ValueRepository: Repository {
 
-    var value = 42
+    let defaults = UserDefaults.standard
+
+    var value: Int {
+        get {
+            return defaults.integer(forKey: "Value")
+        }
+        set {
+            defaults.set(newValue, forKey: "Value")
+        }
+    }
 
     var container: CKContainer {
         return CKContainer(identifier: "iCloud.com.elit.flow")
