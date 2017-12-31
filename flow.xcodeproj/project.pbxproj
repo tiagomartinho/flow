@@ -26,6 +26,8 @@
 		24C2EB7B1FF93A2200C9503D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7A1FF93A2200C9503D /* Repository.swift */; };
 		24C2EB7D1FF93A4B00C9503D /* ValueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7C1FF93A4B00C9503D /* ValueRepository.swift */; };
 		24C2EB7E1FF93E0400C9503D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C2EB5C1FF93A1100C9503D /* Core.framework */; };
+		24C2EB811FF93F0800C9503D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C2EB801FF93F0800C9503D /* CloudKit.framework */; };
+		24C2EB831FF93F2500C9503D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C2EB801FF93F0800C9503D /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,9 @@
 		24C2EB6D1FF93A1100C9503D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C2EB7A1FF93A2200C9503D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		24C2EB7C1FF93A4B00C9503D /* ValueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueRepository.swift; sourceTree = "<group>"; };
+		24C2EB7F1FF93EFE00C9503D /* today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = today.entitlements; sourceTree = "<group>"; };
+		24C2EB801FF93F0800C9503D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		24C2EB821FF93F2300C9503D /* flow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = flow.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C2EB711FF93A1100C9503D /* Core.framework in Frameworks */,
+				24C2EB831FF93F2500C9503D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C2EB811FF93F0800C9503D /* CloudKit.framework in Frameworks */,
 				24C2EB7E1FF93E0400C9503D /* Core.framework in Frameworks */,
 				24C2EB231FF9394300C9503D /* NotificationCenter.framework in Frameworks */,
 			);
@@ -207,6 +214,7 @@
 		24C2EAED1FF9365F00C9503D /* flow */ = {
 			isa = PBXGroup;
 			children = (
+				24C2EB821FF93F2300C9503D /* flow.entitlements */,
 				24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */,
 				24C2EAF01FF9365F00C9503D /* ViewController.swift */,
 				24C2EAF21FF9365F00C9503D /* Main.storyboard */,
@@ -238,6 +246,7 @@
 		24C2EB211FF9394300C9503D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24C2EB801FF93F0800C9503D /* CloudKit.framework */,
 				24C2EB221FF9394300C9503D /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -246,6 +255,7 @@
 		24C2EB241FF9394300C9503D /* today */ = {
 			isa = PBXGroup;
 			children = (
+				24C2EB7F1FF93EFE00C9503D /* today.entitlements */,
 				24C2EB251FF9394300C9503D /* TodayViewController.swift */,
 				24C2EB271FF9394300C9503D /* MainInterface.storyboard */,
 				24C2EB2A1FF9394300C9503D /* Info.plist */,
@@ -411,6 +421,14 @@
 					24C2EAEA1FF9365F00C9503D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					24C2EAFE1FF9365F00C9503D = {
 						CreatedOnToolsVersion = 9.2;
@@ -425,6 +443,14 @@
 					24C2EB1F1FF9394300C9503D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					24C2EB5B1FF93A1100C9503D = {
 						CreatedOnToolsVersion = 9.2;
@@ -672,7 +698,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -723,7 +749,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -736,11 +762,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flow/flow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = flow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -752,11 +779,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flow/flow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = flow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -832,11 +860,12 @@
 		24C2EB2F1FF9394300C9503D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = today/today.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = today/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flow.today;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -847,11 +876,12 @@
 		24C2EB301FF9394300C9503D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = today/today.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = today/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flow.today;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -875,7 +905,7 @@
 				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Core;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow.core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -902,7 +932,7 @@
 				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Core;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow.core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
