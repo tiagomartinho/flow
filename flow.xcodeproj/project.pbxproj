@@ -13,6 +13,14 @@
 		2422C3271FFAB62600791357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2422C3251FFAB62600791357 /* Main.storyboard */; };
 		2422C3331FFAB62600791357 /* flowmacosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422C3321FFAB62600791357 /* flowmacosTests.swift */; };
 		2422C33E1FFAB62600791357 /* flowmacosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422C33D1FFAB62600791357 /* flowmacosUITests.swift */; };
+		2422C3571FFAB66600791357 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2422C34E1FFAB66600791357 /* Core.framework */; };
+		2422C35E1FFAB66600791357 /* CoreMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422C35D1FFAB66600791357 /* CoreMacOSTests.swift */; };
+		2422C3601FFAB66600791357 /* CoreMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 2422C3501FFAB66600791357 /* CoreMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2422C3631FFAB66600791357 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2422C34E1FFAB66600791357 /* Core.framework */; };
+		2422C3641FFAB66600791357 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2422C34E1FFAB66600791357 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2422C36C1FFAB67600791357 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7A1FF93A2200C9503D /* Repository.swift */; };
+		2422C36D1FFAB67600791357 /* ValueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7C1FF93A4B00C9503D /* ValueRepository.swift */; };
+		2422C36F1FFAB75400791357 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2422C36E1FFAB75400791357 /* CloudKit.framework */; };
 		24C2EAEF1FF9365F00C9503D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */; };
 		24C2EAF11FF9365F00C9503D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EAF01FF9365F00C9503D /* ViewController.swift */; };
 		24C2EAF41FF9365F00C9503D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C2EAF21FF9365F00C9503D /* Main.storyboard */; };
@@ -50,6 +58,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2422C31C1FFAB62600791357;
 			remoteInfo = flowmacos;
+		};
+		2422C3581FFAB66600791357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C2EAE31FF9365F00C9503D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2422C34D1FFAB66600791357;
+			remoteInfo = CoreMacOS;
+		};
+		2422C35A1FFAB66600791357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C2EAE31FF9365F00C9503D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2422C31C1FFAB62600791357;
+			remoteInfo = flowmacos;
+		};
+		2422C3611FFAB66600791357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C2EAE31FF9365F00C9503D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2422C34D1FFAB66600791357;
+			remoteInfo = CoreMacOS;
 		};
 		24C2EB001FF9365F00C9503D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -96,6 +125,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2422C3681FFAB66600791357 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2422C3641FFAB66600791357 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24C2EB311FF9394300C9503D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +174,13 @@
 		2422C3391FFAB62600791357 /* flowmacosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flowmacosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2422C33D1FFAB62600791357 /* flowmacosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flowmacosUITests.swift; sourceTree = "<group>"; };
 		2422C33F1FFAB62600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2422C34E1FFAB66600791357 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2422C3501FFAB66600791357 /* CoreMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreMacOS.h; sourceTree = "<group>"; };
+		2422C3511FFAB66600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2422C3561FFAB66600791357 /* CoreMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2422C35D1FFAB66600791357 /* CoreMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMacOSTests.swift; sourceTree = "<group>"; };
+		2422C35F1FFAB66600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2422C36E1FFAB75400791357 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		24C2EAEB1FF9365F00C9503D /* flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C2EAF01FF9365F00C9503D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +217,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2422C3631FFAB66600791357 /* Core.framework in Frameworks */,
+				2422C36F1FFAB75400791357 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +233,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C34A1FFAB66600791357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C3531FFAB66600791357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C3571FFAB66600791357 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +333,24 @@
 			path = flowmacosUITests;
 			sourceTree = "<group>";
 		};
+		2422C34F1FFAB66600791357 /* CoreMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				2422C3501FFAB66600791357 /* CoreMacOS.h */,
+				2422C3511FFAB66600791357 /* Info.plist */,
+			);
+			path = CoreMacOS;
+			sourceTree = "<group>";
+		};
+		2422C35C1FFAB66600791357 /* CoreMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2422C35D1FFAB66600791357 /* CoreMacOSTests.swift */,
+				2422C35F1FFAB66600791357 /* Info.plist */,
+			);
+			path = CoreMacOSTests;
+			sourceTree = "<group>";
+		};
 		24C2EAE21FF9365F00C9503D = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +363,8 @@
 				2422C31E1FFAB62600791357 /* flowmacos */,
 				2422C3311FFAB62600791357 /* flowmacosTests */,
 				2422C33C1FFAB62600791357 /* flowmacosUITests */,
+				2422C34F1FFAB66600791357 /* CoreMacOS */,
+				2422C35C1FFAB66600791357 /* CoreMacOSTests */,
 				24C2EB211FF9394300C9503D /* Frameworks */,
 				24C2EAEC1FF9365F00C9503D /* Products */,
 			);
@@ -298,6 +382,8 @@
 				2422C31D1FFAB62600791357 /* flowmacos.app */,
 				2422C32E1FFAB62600791357 /* flowmacosTests.xctest */,
 				2422C3391FFAB62600791357 /* flowmacosUITests.xctest */,
+				2422C34E1FFAB66600791357 /* Core.framework */,
+				2422C3561FFAB66600791357 /* CoreMacOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -337,6 +423,7 @@
 		24C2EB211FF9394300C9503D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2422C36E1FFAB75400791357 /* CloudKit.framework */,
 				24C2EB801FF93F0800C9503D /* CloudKit.framework */,
 				24C2EB221FF9394300C9503D /* NotificationCenter.framework */,
 			);
@@ -377,6 +464,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2422C34B1FFAB66600791357 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C3601FFAB66600791357 /* CoreMacOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24C2EB591FF93A1100C9503D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,10 +490,12 @@
 				2422C3191FFAB62600791357 /* Sources */,
 				2422C31A1FFAB62600791357 /* Frameworks */,
 				2422C31B1FFAB62600791357 /* Resources */,
+				2422C3681FFAB66600791357 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2422C3621FFAB66600791357 /* PBXTargetDependency */,
 			);
 			name = flowmacos;
 			productName = flowmacos;
@@ -440,6 +537,43 @@
 			productName = flowmacosUITests;
 			productReference = 2422C3391FFAB62600791357 /* flowmacosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2422C34D1FFAB66600791357 /* CoreMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2422C3651FFAB66600791357 /* Build configuration list for PBXNativeTarget "CoreMacOS" */;
+			buildPhases = (
+				2422C3491FFAB66600791357 /* Sources */,
+				2422C34A1FFAB66600791357 /* Frameworks */,
+				2422C34B1FFAB66600791357 /* Headers */,
+				2422C34C1FFAB66600791357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreMacOS;
+			productName = CoreMacOS;
+			productReference = 2422C34E1FFAB66600791357 /* Core.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2422C3551FFAB66600791357 /* CoreMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2422C3691FFAB66600791357 /* Build configuration list for PBXNativeTarget "CoreMacOSTests" */;
+			buildPhases = (
+				2422C3521FFAB66600791357 /* Sources */,
+				2422C3531FFAB66600791357 /* Frameworks */,
+				2422C3541FFAB66600791357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2422C3591FFAB66600791357 /* PBXTargetDependency */,
+				2422C35B1FFAB66600791357 /* PBXTargetDependency */,
+			);
+			name = CoreMacOSTests;
+			productName = CoreMacOSTests;
+			productReference = 2422C3561FFAB66600791357 /* CoreMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		24C2EAEA1FF9365F00C9503D /* flow */ = {
 			isa = PBXNativeTarget;
@@ -565,6 +699,14 @@
 					2422C31C1FFAB62600791357 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					2422C32D1FFAB62600791357 = {
 						CreatedOnToolsVersion = 9.2;
@@ -572,6 +714,15 @@
 						TestTargetID = 2422C31C1FFAB62600791357;
 					};
 					2422C3381FFAB62600791357 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2422C31C1FFAB62600791357;
+					};
+					2422C34D1FFAB66600791357 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2422C3551FFAB66600791357 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2422C31C1FFAB62600791357;
@@ -644,6 +795,8 @@
 				2422C31C1FFAB62600791357 /* flowmacos */,
 				2422C32D1FFAB62600791357 /* flowmacosTests */,
 				2422C3381FFAB62600791357 /* flowmacosUITests */,
+				2422C34D1FFAB66600791357 /* CoreMacOS */,
+				2422C3551FFAB66600791357 /* CoreMacOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -666,6 +819,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2422C3371FFAB62600791357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C34C1FFAB66600791357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C3541FFAB66600791357 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -746,6 +913,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2422C3491FFAB66600791357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C36C1FFAB67600791357 /* Repository.swift in Sources */,
+				2422C36D1FFAB67600791357 /* ValueRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C3521FFAB66600791357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C35E1FFAB66600791357 /* CoreMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24C2EAE71FF9365F00C9503D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -808,6 +992,21 @@
 			isa = PBXTargetDependency;
 			target = 2422C31C1FFAB62600791357 /* flowmacos */;
 			targetProxy = 2422C33A1FFAB62600791357 /* PBXContainerItemProxy */;
+		};
+		2422C3591FFAB66600791357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2422C34D1FFAB66600791357 /* CoreMacOS */;
+			targetProxy = 2422C3581FFAB66600791357 /* PBXContainerItemProxy */;
+		};
+		2422C35B1FFAB66600791357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2422C31C1FFAB62600791357 /* flowmacos */;
+			targetProxy = 2422C35A1FFAB66600791357 /* PBXContainerItemProxy */;
+		};
+		2422C3621FFAB66600791357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2422C34D1FFAB66600791357 /* CoreMacOS */;
+			targetProxy = 2422C3611FFAB66600791357 /* PBXContainerItemProxy */;
 		};
 		24C2EB011FF9365F00C9503D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -880,6 +1079,7 @@
 		2422C3401FFAB62600791357 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = flowmacos/flowmacos.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -899,6 +1099,7 @@
 		2422C3411FFAB62600791357 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = flowmacos/flowmacos.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -990,6 +1191,98 @@
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = flowmacos;
+			};
+			name = Release;
+		};
+		2422C3661FFAB66600791357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CoreMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CoreMacOS;
+				PRODUCT_NAME = Core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2422C3671FFAB66600791357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CoreMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CoreMacOS;
+				PRODUCT_NAME = Core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2422C36A1FFAB66600791357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = CoreMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CoreMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowmacos.app/Contents/MacOS/flowmacos";
+			};
+			name = Debug;
+		};
+		2422C36B1FFAB66600791357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = CoreMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CoreMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowmacos.app/Contents/MacOS/flowmacos";
 			};
 			name = Release;
 		};
@@ -1343,6 +1636,24 @@
 			buildConfigurations = (
 				2422C3441FFAB62600791357 /* Debug */,
 				2422C3451FFAB62600791357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2422C3651FFAB66600791357 /* Build configuration list for PBXNativeTarget "CoreMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2422C3661FFAB66600791357 /* Debug */,
+				2422C3671FFAB66600791357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2422C3691FFAB66600791357 /* Build configuration list for PBXNativeTarget "CoreMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2422C36A1FFAB66600791357 /* Debug */,
+				2422C36B1FFAB66600791357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

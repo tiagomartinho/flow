@@ -1,27 +1,22 @@
-//
-//  ViewController.swift
-//  flowmacos
-//
-//  Created by Tiago Martinho on 1/1/18.
-//  Copyright © 2018 tm. All rights reserved.
-//
-
+import Core
 import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var valueText: NSTextField!
+
+    let repository = ValueRepository()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateUI()
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+    func updateUI() {
+        repository.load { value in
+            DispatchQueue.main.async {
+                self.valueText.stringValue = "\(value)"
+            }
         }
     }
-
-
 }
-
