@@ -1,4 +1,3 @@
-- Mac Today Extension
 - tvOS App
 - tvOS Top Shelf
 - Watch App
@@ -8,6 +7,7 @@
 https://developer.apple.com/library/content/documentation/DataManagement/Conceptual/CloudKitQuickStart/SubscribingtoRecordChanges/SubscribingtoRecordChanges.html
 - Add loading to value
 - Add error handling to write/read from iCloud
+- Ask user to authenticate with iCloud
 - Add local cache to Repository
 - Linter
 - CI

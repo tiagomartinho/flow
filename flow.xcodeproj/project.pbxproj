@@ -24,6 +24,16 @@
 		2422C3901FFABB2F00791357 /* Flow.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2422C3811FFABB2E00791357 /* Flow.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2422C3951FFABBE500791357 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2422C36E1FFAB75400791357 /* CloudKit.framework */; };
 		2422C3961FFABC4300791357 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2422C34E1FFAB66600791357 /* Core.framework */; };
+		248C95381FFABD2100E58CA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C95371FFABD2100E58CA0 /* AppDelegate.swift */; };
+		248C953A1FFABD2100E58CA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C95391FFABD2100E58CA0 /* ViewController.swift */; };
+		248C953D1FFABD2100E58CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248C953B1FFABD2100E58CA0 /* Main.storyboard */; };
+		248C953F1FFABD2100E58CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248C953E1FFABD2100E58CA0 /* Assets.xcassets */; };
+		248C95461FFABD2700E58CA0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248C95451FFABD2700E58CA0 /* CloudKit.framework */; };
+		248C95501FFABD7400E58CA0 /* CoreTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 248C954E1FFABD7400E58CA0 /* CoreTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		248C95531FFABD7400E58CA0 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248C954C1FFABD7400E58CA0 /* Core.framework */; };
+		248C95541FFABD7400E58CA0 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 248C954C1FFABD7400E58CA0 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		248C95591FFABD8300E58CA0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7A1FF93A2200C9503D /* Repository.swift */; };
+		248C955A1FFABD8300E58CA0 /* ValueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EB7C1FF93A4B00C9503D /* ValueRepository.swift */; };
 		24C2EAEF1FF9365F00C9503D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */; };
 		24C2EAF11FF9365F00C9503D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EAF01FF9365F00C9503D /* ViewController.swift */; };
 		24C2EAF41FF9365F00C9503D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C2EAF21FF9365F00C9503D /* Main.storyboard */; };
@@ -57,6 +67,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2422C3801FFABB2E00791357;
 			remoteInfo = todaymacos;
+		};
+		248C95511FFABD7400E58CA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C2EAE31FF9365F00C9503D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248C954B1FFABD7400E58CA0;
+			remoteInfo = CoreTV;
 		};
 		24C2EB2B1FF9394300C9503D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -95,6 +112,17 @@
 				2422C3901FFABB2F00791357 /* Flow.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248C95581FFABD7400E58CA0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				248C95541FFABD7400E58CA0 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		24C2EB311FF9394300C9503D /* Embed App Extensions */ = {
@@ -139,6 +167,17 @@
 		2422C3891FFABB2F00791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2422C38B1FFABB2F00791357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2422C38D1FFABB2F00791357 /* todaymacos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todaymacos.entitlements; sourceTree = "<group>"; };
+		248C95351FFABD2100E58CA0 /* flowtvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowtvos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248C95371FFABD2100E58CA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		248C95391FFABD2100E58CA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		248C953C1FFABD2100E58CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		248C953E1FFABD2100E58CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		248C95401FFABD2100E58CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248C95441FFABD2500E58CA0 /* flowtvos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = flowtvos.entitlements; sourceTree = "<group>"; };
+		248C95451FFABD2700E58CA0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		248C954C1FFABD7400E58CA0 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		248C954E1FFABD7400E58CA0 /* CoreTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTV.h; sourceTree = "<group>"; };
+		248C954F1FFABD7400E58CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CoreTV/Info.plist; sourceTree = SOURCE_ROOT; };
 		24C2EAEB1FF9365F00C9503D /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C2EAF01FF9365F00C9503D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +224,22 @@
 				2422C3961FFABC4300791357 /* Core.framework in Frameworks */,
 				2422C3821FFABB2E00791357 /* NotificationCenter.framework in Frameworks */,
 				2422C3951FFABBE500791357 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248C95321FFABD2100E58CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248C95461FFABD2700E58CA0 /* CloudKit.framework in Frameworks */,
+				248C95531FFABD7400E58CA0 /* Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248C95481FFABD7400E58CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +297,19 @@
 			path = todaymacos;
 			sourceTree = "<group>";
 		};
+		248C95361FFABD2100E58CA0 /* flowtvos */ = {
+			isa = PBXGroup;
+			children = (
+				248C95441FFABD2500E58CA0 /* flowtvos.entitlements */,
+				248C95371FFABD2100E58CA0 /* AppDelegate.swift */,
+				248C95391FFABD2100E58CA0 /* ViewController.swift */,
+				248C953B1FFABD2100E58CA0 /* Main.storyboard */,
+				248C953E1FFABD2100E58CA0 /* Assets.xcassets */,
+				248C95401FFABD2100E58CA0 /* Info.plist */,
+			);
+			path = flowtvos;
+			sourceTree = "<group>";
+		};
 		24C2EAE21FF9365F00C9503D = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +318,7 @@
 				24C2EB241FF9394300C9503D /* today */,
 				2422C31E1FFAB62600791357 /* flowmacos */,
 				2422C3831FFABB2E00791357 /* todaymacos */,
+				248C95361FFABD2100E58CA0 /* flowtvos */,
 				24C2EB211FF9394300C9503D /* Frameworks */,
 				24C2EAEC1FF9365F00C9503D /* Products */,
 			);
@@ -264,6 +333,8 @@
 				2422C31D1FFAB62600791357 /* Flow.app */,
 				2422C34E1FFAB66600791357 /* Core.framework */,
 				2422C3811FFABB2E00791357 /* Flow.appex */,
+				248C95351FFABD2100E58CA0 /* flowtvos.app */,
+				248C954C1FFABD7400E58CA0 /* Core.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +356,7 @@
 		24C2EB211FF9394300C9503D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				248C95451FFABD2700E58CA0 /* CloudKit.framework */,
 				2422C36E1FFAB75400791357 /* CloudKit.framework */,
 				24C2EB801FF93F0800C9503D /* CloudKit.framework */,
 				24C2EB221FF9394300C9503D /* NotificationCenter.framework */,
@@ -306,6 +378,8 @@
 		24C2EB5D1FF93A1100C9503D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				248C954E1FFABD7400E58CA0 /* CoreTV.h */,
+				248C954F1FFABD7400E58CA0 /* Info.plist */,
 				2422C3501FFAB66600791357 /* CoreMacOS.h */,
 				2422C3511FFAB66600791357 /* Info.plist */,
 				24C2EB5E1FF93A1100C9503D /* Core.h */,
@@ -324,6 +398,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2422C3601FFAB66600791357 /* CoreMacOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248C95491FFABD7400E58CA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248C95501FFABD7400E58CA0 /* CoreTV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +475,43 @@
 			productName = todaymacos;
 			productReference = 2422C3811FFABB2E00791357 /* Flow.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		248C95341FFABD2100E58CA0 /* flowtvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248C95431FFABD2100E58CA0 /* Build configuration list for PBXNativeTarget "flowtvos" */;
+			buildPhases = (
+				248C95311FFABD2100E58CA0 /* Sources */,
+				248C95321FFABD2100E58CA0 /* Frameworks */,
+				248C95331FFABD2100E58CA0 /* Resources */,
+				248C95581FFABD7400E58CA0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248C95521FFABD7400E58CA0 /* PBXTargetDependency */,
+			);
+			name = flowtvos;
+			productName = flowtvos;
+			productReference = 248C95351FFABD2100E58CA0 /* flowtvos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		248C954B1FFABD7400E58CA0 /* CoreTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248C95551FFABD7400E58CA0 /* Build configuration list for PBXNativeTarget "CoreTV" */;
+			buildPhases = (
+				248C95471FFABD7400E58CA0 /* Sources */,
+				248C95481FFABD7400E58CA0 /* Frameworks */,
+				248C95491FFABD7400E58CA0 /* Headers */,
+				248C954A1FFABD7400E58CA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreTV;
+			productName = CoreTV;
+			productReference = 248C954C1FFABD7400E58CA0 /* Core.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		24C2EAEA1FF9365F00C9503D /* flow */ = {
 			isa = PBXNativeTarget;
@@ -488,6 +607,22 @@
 							};
 						};
 					};
+					248C95341FFABD2100E58CA0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					248C954B1FFABD7400E58CA0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					24C2EAEA1FF9365F00C9503D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -534,10 +669,12 @@
 			targets = (
 				24C2EAEA1FF9365F00C9503D /* flow */,
 				2422C31C1FFAB62600791357 /* flowmacos */,
+				248C95341FFABD2100E58CA0 /* flowtvos */,
 				24C2EB1F1FF9394300C9503D /* today */,
 				2422C3801FFABB2E00791357 /* todaymacos */,
 				24C2EB5B1FF93A1100C9503D /* Core */,
 				2422C34D1FFAB66600791357 /* CoreMacOS */,
+				248C954B1FFABD7400E58CA0 /* CoreTV */,
 			);
 		};
 /* End PBXProject section */
@@ -565,6 +702,22 @@
 			files = (
 				2422C3881FFABB2E00791357 /* TodayViewController.xib in Resources */,
 				2422C38C1FFABB2F00791357 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248C95331FFABD2100E58CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248C953F1FFABD2100E58CA0 /* Assets.xcassets in Resources */,
+				248C953D1FFABD2100E58CA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248C954A1FFABD7400E58CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +775,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		248C95311FFABD2100E58CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248C953A1FFABD2100E58CA0 /* ViewController.swift in Sources */,
+				248C95381FFABD2100E58CA0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248C95471FFABD7400E58CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248C95591FFABD8300E58CA0 /* Repository.swift in Sources */,
+				248C955A1FFABD8300E58CA0 /* ValueRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24C2EAE71FF9365F00C9503D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -661,6 +832,11 @@
 			target = 2422C3801FFABB2E00791357 /* todaymacos */;
 			targetProxy = 2422C38E1FFABB2F00791357 /* PBXContainerItemProxy */;
 		};
+		248C95521FFABD7400E58CA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248C954B1FFABD7400E58CA0 /* CoreTV */;
+			targetProxy = 248C95511FFABD7400E58CA0 /* PBXContainerItemProxy */;
+		};
 		24C2EB2C1FF9394300C9503D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 24C2EB1F1FF9394300C9503D /* today */;
@@ -696,6 +872,14 @@
 				2422C38B1FFABB2F00791357 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		248C953B1FFABD2100E58CA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248C953C1FFABD2100E58CA0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		24C2EAF21FF9365F00C9503D /* Main.storyboard */ = {
@@ -856,6 +1040,98 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		248C95411FFABD2100E58CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = flowtvos/flowtvos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowtvos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowtvos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		248C95421FFABD2100E58CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = flowtvos/flowtvos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowtvos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowtvos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		248C95561FFABD7400E58CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CoreTV;
+				PRODUCT_NAME = Core;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		248C95571FFABD7400E58CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CoreTV;
+				PRODUCT_NAME = Core;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1049,7 +1325,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow.core;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Core;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -1076,7 +1352,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elit.flow.core;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Core;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1111,6 +1387,24 @@
 			buildConfigurations = (
 				2422C3921FFABB2F00791357 /* Debug */,
 				2422C3931FFABB2F00791357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248C95431FFABD2100E58CA0 /* Build configuration list for PBXNativeTarget "flowtvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248C95411FFABD2100E58CA0 /* Debug */,
+				248C95421FFABD2100E58CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248C95551FFABD7400E58CA0 /* Build configuration list for PBXNativeTarget "CoreTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248C95561FFABD7400E58CA0 /* Debug */,
+				248C95571FFABD7400E58CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
