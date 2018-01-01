@@ -1,5 +1,3 @@
-- tvOS App
-- tvOS Top Shelf
 - Watch App
 - Watch Extension
 - Notification Badge

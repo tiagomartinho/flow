@@ -7,7 +7,7 @@
 		<key>Core.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>5</integer>
 		</dict>
 		<key>CoreMacOS.xcscheme</key>
 		<dict>
@@ -32,17 +32,35 @@
 		<key>flowtvos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>2</integer>
 		</dict>
 		<key>today.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>todaymacos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>248C95341FFABD2100E58CA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24C2EAEA1FF9365F00C9503D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24C2EB1F1FF9394300C9503D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
