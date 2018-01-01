@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2422C3201FFAB62600791357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422C31F1FFAB62600791357 /* AppDelegate.swift */; };
+		2422C3221FFAB62600791357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422C3211FFAB62600791357 /* ViewController.swift */; };
+		2422C3241FFAB62600791357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2422C3231FFAB62600791357 /* Assets.xcassets */; };
+		2422C3271FFAB62600791357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2422C3251FFAB62600791357 /* Main.storyboard */; };
+		2422C3331FFAB62600791357 /* flowmacosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422C3321FFAB62600791357 /* flowmacosTests.swift */; };
+		2422C33E1FFAB62600791357 /* flowmacosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422C33D1FFAB62600791357 /* flowmacosUITests.swift */; };
 		24C2EAEF1FF9365F00C9503D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */; };
 		24C2EAF11FF9365F00C9503D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C2EAF01FF9365F00C9503D /* ViewController.swift */; };
 		24C2EAF41FF9365F00C9503D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C2EAF21FF9365F00C9503D /* Main.storyboard */; };
@@ -31,6 +37,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2422C32F1FFAB62600791357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C2EAE31FF9365F00C9503D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2422C31C1FFAB62600791357;
+			remoteInfo = flowmacos;
+		};
+		2422C33A1FFAB62600791357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C2EAE31FF9365F00C9503D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2422C31C1FFAB62600791357;
+			remoteInfo = flowmacos;
+		};
 		24C2EB001FF9365F00C9503D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24C2EAE31FF9365F00C9503D /* Project object */;
@@ -101,6 +121,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2422C31D1FFAB62600791357 /* flowmacos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowmacos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2422C31F1FFAB62600791357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2422C3211FFAB62600791357 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2422C3231FFAB62600791357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2422C3261FFAB62600791357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2422C3281FFAB62600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2422C3291FFAB62600791357 /* flowmacos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = flowmacos.entitlements; sourceTree = "<group>"; };
+		2422C32E1FFAB62600791357 /* flowmacosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flowmacosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2422C3321FFAB62600791357 /* flowmacosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flowmacosTests.swift; sourceTree = "<group>"; };
+		2422C3341FFAB62600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2422C3391FFAB62600791357 /* flowmacosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flowmacosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2422C33D1FFAB62600791357 /* flowmacosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flowmacosUITests.swift; sourceTree = "<group>"; };
+		2422C33F1FFAB62600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C2EAEB1FF9365F00C9503D /* flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C2EAF01FF9365F00C9503D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +166,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2422C31A1FFAB62600791357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C32B1FFAB62600791357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C3361FFAB62600791357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24C2EAE81FF9365F00C9503D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +238,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2422C31E1FFAB62600791357 /* flowmacos */ = {
+			isa = PBXGroup;
+			children = (
+				2422C31F1FFAB62600791357 /* AppDelegate.swift */,
+				2422C3211FFAB62600791357 /* ViewController.swift */,
+				2422C3231FFAB62600791357 /* Assets.xcassets */,
+				2422C3251FFAB62600791357 /* Main.storyboard */,
+				2422C3281FFAB62600791357 /* Info.plist */,
+				2422C3291FFAB62600791357 /* flowmacos.entitlements */,
+			);
+			path = flowmacos;
+			sourceTree = "<group>";
+		};
+		2422C3311FFAB62600791357 /* flowmacosTests */ = {
+			isa = PBXGroup;
+			children = (
+				2422C3321FFAB62600791357 /* flowmacosTests.swift */,
+				2422C3341FFAB62600791357 /* Info.plist */,
+			);
+			path = flowmacosTests;
+			sourceTree = "<group>";
+		};
+		2422C33C1FFAB62600791357 /* flowmacosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2422C33D1FFAB62600791357 /* flowmacosUITests.swift */,
+				2422C33F1FFAB62600791357 /* Info.plist */,
+			);
+			path = flowmacosUITests;
+			sourceTree = "<group>";
+		};
 		24C2EAE21FF9365F00C9503D = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +278,9 @@
 				24C2EB241FF9394300C9503D /* today */,
 				24C2EB5D1FF93A1100C9503D /* Core */,
 				24C2EB6A1FF93A1100C9503D /* CoreTests */,
+				2422C31E1FFAB62600791357 /* flowmacos */,
+				2422C3311FFAB62600791357 /* flowmacosTests */,
+				2422C33C1FFAB62600791357 /* flowmacosUITests */,
 				24C2EB211FF9394300C9503D /* Frameworks */,
 				24C2EAEC1FF9365F00C9503D /* Products */,
 			);
@@ -207,6 +295,9 @@
 				24C2EB201FF9394300C9503D /* today.appex */,
 				24C2EB5C1FF93A1100C9503D /* Core.framework */,
 				24C2EB641FF93A1100C9503D /* CoreTests.xctest */,
+				2422C31D1FFAB62600791357 /* flowmacos.app */,
+				2422C32E1FFAB62600791357 /* flowmacosTests.xctest */,
+				2422C3391FFAB62600791357 /* flowmacosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,6 +388,59 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2422C31C1FFAB62600791357 /* flowmacos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2422C3461FFAB62600791357 /* Build configuration list for PBXNativeTarget "flowmacos" */;
+			buildPhases = (
+				2422C3191FFAB62600791357 /* Sources */,
+				2422C31A1FFAB62600791357 /* Frameworks */,
+				2422C31B1FFAB62600791357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flowmacos;
+			productName = flowmacos;
+			productReference = 2422C31D1FFAB62600791357 /* flowmacos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2422C32D1FFAB62600791357 /* flowmacosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2422C3471FFAB62600791357 /* Build configuration list for PBXNativeTarget "flowmacosTests" */;
+			buildPhases = (
+				2422C32A1FFAB62600791357 /* Sources */,
+				2422C32B1FFAB62600791357 /* Frameworks */,
+				2422C32C1FFAB62600791357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2422C3301FFAB62600791357 /* PBXTargetDependency */,
+			);
+			name = flowmacosTests;
+			productName = flowmacosTests;
+			productReference = 2422C32E1FFAB62600791357 /* flowmacosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2422C3381FFAB62600791357 /* flowmacosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2422C3481FFAB62600791357 /* Build configuration list for PBXNativeTarget "flowmacosUITests" */;
+			buildPhases = (
+				2422C3351FFAB62600791357 /* Sources */,
+				2422C3361FFAB62600791357 /* Frameworks */,
+				2422C3371FFAB62600791357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2422C33B1FFAB62600791357 /* PBXTargetDependency */,
+			);
+			name = flowmacosUITests;
+			productName = flowmacosUITests;
+			productReference = 2422C3391FFAB62600791357 /* flowmacosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		24C2EAEA1FF9365F00C9503D /* flow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24C2EB131FF9365F00C9503D /* Build configuration list for PBXNativeTarget "flow" */;
@@ -418,6 +562,20 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = tm;
 				TargetAttributes = {
+					2422C31C1FFAB62600791357 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2422C32D1FFAB62600791357 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2422C31C1FFAB62600791357;
+					};
+					2422C3381FFAB62600791357 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2422C31C1FFAB62600791357;
+					};
 					24C2EAEA1FF9365F00C9503D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -483,11 +641,37 @@
 				24C2EB1F1FF9394300C9503D /* today */,
 				24C2EB5B1FF93A1100C9503D /* Core */,
 				24C2EB631FF93A1100C9503D /* CoreTests */,
+				2422C31C1FFAB62600791357 /* flowmacos */,
+				2422C32D1FFAB62600791357 /* flowmacosTests */,
+				2422C3381FFAB62600791357 /* flowmacosUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2422C31B1FFAB62600791357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C3241FFAB62600791357 /* Assets.xcassets in Resources */,
+				2422C3271FFAB62600791357 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C32C1FFAB62600791357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C3371FFAB62600791357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24C2EAE91FF9365F00C9503D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,6 +721,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2422C3191FFAB62600791357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C3221FFAB62600791357 /* ViewController.swift in Sources */,
+				2422C3201FFAB62600791357 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C32A1FFAB62600791357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C3331FFAB62600791357 /* flowmacosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2422C3351FFAB62600791357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2422C33E1FFAB62600791357 /* flowmacosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24C2EAE71FF9365F00C9503D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -590,6 +799,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2422C3301FFAB62600791357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2422C31C1FFAB62600791357 /* flowmacos */;
+			targetProxy = 2422C32F1FFAB62600791357 /* PBXContainerItemProxy */;
+		};
+		2422C33B1FFAB62600791357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2422C31C1FFAB62600791357 /* flowmacos */;
+			targetProxy = 2422C33A1FFAB62600791357 /* PBXContainerItemProxy */;
+		};
 		24C2EB011FF9365F00C9503D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 24C2EAEA1FF9365F00C9503D /* flow */;
@@ -623,6 +842,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2422C3251FFAB62600791357 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2422C3261FFAB62600791357 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		24C2EAF21FF9365F00C9503D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -650,6 +877,122 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2422C3401FFAB62600791357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flowmacos/flowmacos.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowmacos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowmacos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2422C3411FFAB62600791357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flowmacos/flowmacos.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowmacos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowmacos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2422C3421FFAB62600791357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowmacosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowmacosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowmacos.app/Contents/MacOS/flowmacos";
+			};
+			name = Debug;
+		};
+		2422C3431FFAB62600791357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowmacosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowmacosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowmacos.app/Contents/MacOS/flowmacos";
+			};
+			name = Release;
+		};
+		2422C3441FFAB62600791357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowmacosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowmacosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = flowmacos;
+			};
+			name = Debug;
+		};
+		2422C3451FFAB62600791357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = flowmacosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.flowmacosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = flowmacos;
+			};
+			name = Release;
+		};
 		24C2EB111FF9365F00C9503D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -977,6 +1320,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2422C3461FFAB62600791357 /* Build configuration list for PBXNativeTarget "flowmacos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2422C3401FFAB62600791357 /* Debug */,
+				2422C3411FFAB62600791357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2422C3471FFAB62600791357 /* Build configuration list for PBXNativeTarget "flowmacosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2422C3421FFAB62600791357 /* Debug */,
+				2422C3431FFAB62600791357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2422C3481FFAB62600791357 /* Build configuration list for PBXNativeTarget "flowmacosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2422C3441FFAB62600791357 /* Debug */,
+				2422C3451FFAB62600791357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		24C2EAE61FF9365F00C9503D /* Build configuration list for PBXProject "flow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
