@@ -106,7 +106,7 @@
 		2422C3291FFAB62600791357 /* flowmacos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = flowmacos.entitlements; sourceTree = "<group>"; };
 		2422C34E1FFAB66600791357 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2422C3501FFAB66600791357 /* CoreMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreMacOS.h; sourceTree = "<group>"; };
-		2422C3511FFAB66600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2422C3511FFAB66600791357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CoreMacOS/Info.plist; sourceTree = SOURCE_ROOT; };
 		2422C36E1FFAB75400791357 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		24C2EAEB1FF9365F00C9503D /* flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C2EAEE1FF9365F00C9503D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -189,23 +189,13 @@
 			path = flowmacos;
 			sourceTree = "<group>";
 		};
-		2422C34F1FFAB66600791357 /* CoreMacOS */ = {
-			isa = PBXGroup;
-			children = (
-				2422C3501FFAB66600791357 /* CoreMacOS.h */,
-				2422C3511FFAB66600791357 /* Info.plist */,
-			);
-			path = CoreMacOS;
-			sourceTree = "<group>";
-		};
 		24C2EAE21FF9365F00C9503D = {
 			isa = PBXGroup;
 			children = (
+				24C2EB5D1FF93A1100C9503D /* Core */,
 				24C2EAED1FF9365F00C9503D /* flow */,
 				24C2EB241FF9394300C9503D /* today */,
-				24C2EB5D1FF93A1100C9503D /* Core */,
 				2422C31E1FFAB62600791357 /* flowmacos */,
-				2422C34F1FFAB66600791357 /* CoreMacOS */,
 				24C2EB211FF9394300C9503D /* Frameworks */,
 				24C2EAEC1FF9365F00C9503D /* Products */,
 			);
@@ -261,6 +251,8 @@
 		24C2EB5D1FF93A1100C9503D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2422C3501FFAB66600791357 /* CoreMacOS.h */,
+				2422C3511FFAB66600791357 /* Info.plist */,
 				24C2EB5E1FF93A1100C9503D /* Core.h */,
 				24C2EB5F1FF93A1100C9503D /* Info.plist */,
 				24C2EB7A1FF93A2200C9503D /* Repository.swift */,
