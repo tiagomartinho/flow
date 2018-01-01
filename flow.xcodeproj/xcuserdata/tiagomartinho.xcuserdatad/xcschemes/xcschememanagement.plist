@@ -7,7 +7,7 @@
 		<key>Core.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>CoreMacOS.xcscheme</key>
 		<dict>
@@ -17,7 +17,7 @@
 		<key>flow.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>flowmacos.xcscheme</key>
 		<dict>
@@ -27,7 +27,7 @@
 		<key>today.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 </dict>

@@ -1,4 +1,3 @@
-- Mac App
 - Mac Today Extension
 - tvOS App
 - tvOS Top Shelf
